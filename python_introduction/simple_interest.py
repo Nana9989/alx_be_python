@@ -4,5 +4,5 @@ time = 3
 p = int(principal)
 r = float(rate)
 t = int(time)
-interest = p * t * r
+interest = rate * principal * time
 print("The simple interest is:", p * t * r)
