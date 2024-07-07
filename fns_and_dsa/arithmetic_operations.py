@@ -8,9 +8,11 @@ def perform_operation(num1, num2, operation):
          result = num1*num2
      case "divide":
          if num2 == 0:
-             print("Invalid, cannot divide by zero")
-         else:
+             print("Invalid, cannot divide by zero.")
+         elif num2 != 0:
              result = num1/num2
+         else:
+             print("Invalid selection made. Please check your answer.")
  return result
 
 
