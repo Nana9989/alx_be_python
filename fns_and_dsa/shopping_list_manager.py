@@ -30,11 +30,10 @@ def main():
             break
         else:
             print("Invalid choice. Please try again.")
+display_menu()
 
-choice = input(display_menu())
-
-main()
-
+if __name__ == "__main__":
+    main()
 
 
 
