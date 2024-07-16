@@ -11,4 +11,4 @@ def safe_divide(numerator, denominator):
     except ValueError:
         return "Error: Please enter numeric values only."
 
-    return f"The result is {result:.2f}"
+    return f"The result of the division is {result:.2f}"
