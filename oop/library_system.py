@@ -29,18 +29,9 @@ class Library:
 
     def list_books(self):
         for book in self.books:
-            if isinstance(book, Book):
-                book_type = "Book"
-            elif isinstance(book, EBook):
-                book_type = "EBook"
-            elif isinstance(book, PrintBook):
-                book_type = "PrintBook"
-            else:
-                book_type = "Unknown"
-
             if isinstance(book, EBook):
                 print(f"EBook: {book.title} by {book.author}, File Size: {book.file_size}KB")
             elif isinstance(book, PrintBook):
                 print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             else:
-                print(f"{book_type}: {book.title} by {book.author}")
+                print(f"Book: {book.title} by {book.author}")
