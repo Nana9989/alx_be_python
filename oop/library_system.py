@@ -39,8 +39,8 @@ class Library:
                 book_type = "Unknown"
 
             if isinstance(book, EBook):
-                print(f"{book_type}: {book.title} by {book.author}, File Size: {book.file_size} KB")
+                print(f"Ebook: {book.title} by {book.author}, File Size: {book.file_size} KB")
             elif isinstance(book, PrintBook):
-                print(f"{book_type}: {book.title} by {book.author}, Page Count: {book.page_count}")
+                print(f"PrintBook: {book.title} by {book.author}, Page Count: {book.page_count}")
             else:
                 print(f"{book_type}: {book.title} by {book.author}")
